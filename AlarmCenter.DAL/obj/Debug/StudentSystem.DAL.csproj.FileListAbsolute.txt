@@ -1,0 +1,21 @@
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\bin\Debug\StudentManagerSystem.DAL.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\bin\Debug\StudentManagerSystem.DAL.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\bin\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\bin\Debug\StudentManagerSystem.Model.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\obj\Debug\StudentSystem.DAL.csprojResolveAssemblyReference.cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\obj\Debug\StudentManagerSystem.DAL.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\obj\Debug\StudentManagerSystem.DAL.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.DAL\bin\Debug\StudentManagerSystem.DAL.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.DAL\bin\Debug\StudentManagerSystem.DAL.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.DAL\bin\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.DAL\bin\Debug\StudentManagerSystem.Model.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.DAL\obj\Debug\StudentSystem.DAL.csprojResolveAssemblyReference.cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.DAL\obj\Debug\StudentManagerSystem.DAL.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.DAL\obj\Debug\StudentManagerSystem.DAL.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.DAL\obj\Debug\StudentSystem.DAL.csprojResolveAssemblyReference.cache
+C:\Program Files\StudentManagerSystem\StudentSystem.DAL\bin\Debug\StudentSystem.DAL.dll
+C:\Program Files\StudentManagerSystem\StudentSystem.DAL\bin\Debug\StudentSystem.DAL.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.DAL\bin\Debug\StudentSystem.Model.dll
+C:\Program Files\StudentManagerSystem\StudentSystem.DAL\bin\Debug\StudentSystem.Model.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.DAL\obj\Debug\StudentSystem.DAL.dll
+C:\Program Files\StudentManagerSystem\StudentSystem.DAL\obj\Debug\StudentSystem.DAL.pdb

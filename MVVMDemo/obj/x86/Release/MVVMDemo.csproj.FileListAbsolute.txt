@@ -1,0 +1,11 @@
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\bin\Release\MVVMDemo.exe
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\bin\Release\MVVMDemo.pdb
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\MainWindow.baml
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\MainWindow.g.cs
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\App.g.cs
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\MVVMDemo_MarkupCompile.cache
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\MVVMDemo.g.resources
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\MVVMDemo.Properties.Resources.resources
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\MVVMDemo.csproj.GenerateResource.Cache
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\MVVMDemo.exe
+C:\Users\姆斯\Desktop\AlarmCenter\MVVMDemo\obj\x86\Release\MVVMDemo.pdb

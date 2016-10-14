@@ -1,0 +1,149 @@
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\bin\Debug\StudentManagerSystem.UI.exe.config
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\bin\Debug\StudentManagerSystem.exe.config
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\StudentManagerSystem.exe
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\StudentSystem.UI.csprojResolveAssemblyReference.cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\MainWindow.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\SystemManager\SystemManagerEdit.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\SystemManager\SystemManagerList.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\LoginWindow.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\Student\StudentEdit.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\Student\StudentList.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\MainWindow.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\SystemManager\SystemManagerEdit.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\SystemManager\SystemManagerList.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\LoginWindow.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\Student\StudentEdit.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\Student\StudentList.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\App.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\StudentManagerSystem_MarkupCompile.cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\StudentManagerSystem.g.resources
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\StudentManagerSystem.UI.Properties.Resources.resources
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Debug\StudentSystem.UI.csproj.GenerateResource.Cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentManagerSystem.exe.config
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentManagerSystem.exe
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.csprojResolveAssemblyReference.cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\MainWindow.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\LoginWindow.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\LoginWindow.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\App.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentManagerSystem_MarkupCompile.cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentManagerSystem.g.resources
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentManagerSystem.UI.Properties.Resources.resources
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.csproj.GenerateResource.Cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentEdit.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentList.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentEdit.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentList.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerEdit.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerList.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerEdit.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerList.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentManagerSystem.exe
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentManagerSystem.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentManagerSystem.DAL.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentManagerSystem.DAL.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentManagerSystem.Model.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentManagerSystem.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.exe.config
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.csprojResolveAssemblyReference.cache
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\MainWindow.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerEdit.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerList.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\LoginWindow.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentEdit.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentList.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\MainWindow.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerEdit.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerList.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\LoginWindow.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentEdit.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentList.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\App.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem_MarkupCompile.cache
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.g.resources
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.Properties.Resources.resources
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.csproj.GenerateResource.Cache
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserEdit.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserList.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserEdit.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserList.g.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.exe
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.DAL.dll
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.Model.dll
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.DAL.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.Model.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.exe
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Report\ReportWindow.baml
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Report\ReportWindow.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.exe.config
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.exe
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.pdb
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.exe
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.pdb
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.DAL.dll
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.Model.dll
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.DAL.pdb
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.Model.pdb
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.csprojResolveAssemblyReference.cache
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\MainWindow.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Report\ReportWindow.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerEdit.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerList.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\LoginWindow.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentEdit.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentList.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserEdit.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserList.baml
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\MainWindow.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Report\ReportWindow.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerEdit.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerList.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\LoginWindow.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentEdit.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentList.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserEdit.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserList.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\App.g.cs
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem_MarkupCompile.cache
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.g.resources
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.Properties.Resources.resources
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.Report.CrystalReport1.resources
+F:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.csproj.GenerateResource.Cache
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.exe.config
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.exe
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.pdb
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.exe
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.pdb
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.DAL.dll
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.Model.dll
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.DAL.pdb
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\bin\Debug\StudentSystem.Model.pdb
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.csprojResolveAssemblyReference.cache
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\MainWindow.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Report\ReportWindow.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerEdit.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerList.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\LoginWindow.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentEdit.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentList.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserEdit.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserList.baml
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\MainWindow.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Report\ReportWindow.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerEdit.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\SystemManagers\SystemManagerList.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\LoginWindow.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentEdit.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Students\StudentList.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserEdit.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\Users\UserList.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\App.g.cs
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem_MarkupCompile.cache
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.g.resources
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.Properties.Resources.resources
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.Report.CrystalReport1.resources
+E:\CSharp\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\StudentSystem.UI.csproj.GenerateResource.Cache

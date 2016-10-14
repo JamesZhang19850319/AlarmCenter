@@ -1,0 +1,55 @@
+2013-9-3
+1.给Combobox.SelectItems赋值的时候，必须要保证赋的值和Items的数据类型相同，否则不会显示。
+2.PreviewKeyDown事件和KeyDown事件的差异，PreviewKeyDown事件是WPF中的路由事件里的隧道事件。使用中注意KeyDown事件不会相应空格键和倒退键（Backspace）。
+3.DataGrid:行鼠标经过、点击时的背景、文字、行高等样式 
+		<DataGrid.RowStyle >
+                    <Style TargetType="DataGridRow">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FFF1FAFF"/>
+                                <Setter Property="FontSize" Value=" 20"/>
+                                <Setter Property="Height" Value="30"/>
+                                <Setter Property="Foreground" Value="Blue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.CellStyle >
+                    <Style TargetType="DataGridCell">
+                        <Style.Triggers >
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#FFF1FAFF"/>
+                                <Setter Property="FontSize" Value=" 20"/>
+                                <Setter Property="Height" Value="30"/>
+                                <Setter Property="Foreground" Value="Blue"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+			//设置背景透明
+			<DataGrid.CellStyle >
+                            <Style TargetType="DataGridCell">
+                                <Style.Triggers >
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="transparent"/>
+                                        <Setter Property="Foreground" Value="Black"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.CellStyle>
+4.WPF颜色转换
+using System.Windows.Media;
+1）String转换成Color
+Color color = (Color)ColorConverter.ConvertFromString(string);
+2）String转换成Brush
+  BrushConverter brushConverter = new BrushConverter();
+  Brush brush = (Brush)brushConverter.ConvertFromString(string);
+3）Color转换成Brush
+  Brush brush = new SolidColorBrush(color));
+4）Brush转换成Color有两种方法：
+（1）先将Brush转成string，再转成Color。
+  Color color= (Color)ColorConverter.ConvertFromString(brush.ToString());
+（2）将Brush转成SolidColorBrush，再取Color。
+  Color color= ((SolidColorBrush)CadColor.Background).Color;
+2013-10-10
+1）改Event报警事件表中的ID为Guid。目的是为了处理事件计数。

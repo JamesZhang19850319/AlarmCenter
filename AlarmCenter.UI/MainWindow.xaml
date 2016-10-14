@@ -1,0 +1,235 @@
+﻿<Window x:Class="AlarmCenter.UI.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
+        Title="AlarmCenter" Height="600" Width="800" Loaded="Window_Loaded" VerticalContentAlignment="Top"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized" Closing="Window_Closing" Background="#FFEEF5FD" Icon="/AlarmCenter;component/AlarmCenter.ico">
+    <Grid x:Name="layoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Height="25" FontSize="13" Background="#FFEEF5FD">
+            <MenuItem Header="系统" Width="60" Height="25" >
+                <MenuItem Name="miSystem" Header="管理员" Click="miSystem_Click"></MenuItem>
+                <MenuItem Name="miSetting" Header="设置" Click="miSetting_Click"></MenuItem>
+                <MenuItem Name="miSerialPortData" Header="串口数据" Click="miSerialPortData_Click"></MenuItem>
+                <MenuItem Name="miReportFormat" Header="报告格式" Click="miReportFormat_Click"></MenuItem>
+                <MenuItem Name="miSimulationTest" Header="模拟事件" Click="miSimulationTest_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="用户" Width="60" Height="25" >
+                <MenuItem Name="miUser" Header="用户列表" Click="miUser_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="事件" Width="60" Height="25">
+                <MenuItem Name="miEvent" Header="报警事件列表" Click="miEvent_Click"></MenuItem>
+                <MenuItem Name="miSystemLog" Header="系统日志列表" Click="miSystemLog_Click"></MenuItem>
+                <MenuItem Name="miMessageLog" Header="短信列表" Click="miMessage_Click"></MenuItem>
+                <MenuItem Name="miVideoLog" Header="视频列表" Click="miVideo_Click"></MenuItem>
+                <MenuItem Name="miRecordLog" Header="录音列表" Click="miRecord_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="报表"  Width="60" Height="25">
+                <MenuItem Name="miSystemReportRDLC" Header="系统日志报表" Click="miSystemReportRDLC_Click"></MenuItem>
+                <MenuItem Name="miUserReportRDLC" Header="用户资料报表" Click="miRDLCUserReport_Click"></MenuItem>
+                <MenuItem Name="miAlarmReportRDLC" Header="报警事件报表" Click="miAlarmReportRDLC_Click"></MenuItem>
+                <MenuItem Name="miMessageReportRDLC" Header="短信报表" Click="miMessageReportRDLC_Click"></MenuItem>
+                <MenuItem Name="miVideoReportRDLC" Header="视频报表" Click="miVideoReportRDLC_Click"></MenuItem>
+                <MenuItem Name="miRecordReportRDLC" Header="录音报表" Click="miRecordReportRDLC_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="帮助" Width="60" Height="25">
+                <MenuItem Name="miHelp" Header="查看帮助" Click="miHelp_Click"></MenuItem>
+                <MenuItem Name="miAbout" Header="关于AlarmCenter" Click="miAbout_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <ToolBar Grid.Row="1" Height="35" VerticalAlignment="Top" Background="#FFEEF5FD">
+            <Button Name="btnSystemReportList" Click="miSystemReportRDLC_Click" >
+                <WrapPanel>
+                    <Image DockPanel.Dock="Top" ToolTip="系统日志报表" Source ="Images/SystemReport.ico" ></Image>
+                    <TextBlock Text = " 系统日志 " FontSize="15" Padding="0,2,0,2" />
+                </WrapPanel>
+                
+            </Button>
+            <Button Name="btnUserList" Click="miRDLCUserReport_Click" >
+                <WrapPanel>
+                    <Image DockPanel.Dock="Top" ToolTip="用户资料报表" Source ="Images/UserReport.ico" ></Image>
+                    <TextBlock Text = " 用户资料 " FontSize="15" Padding="0,2,0,2" />
+                </WrapPanel>
+                
+            </Button>
+            <Button Name="btnAlarmReportList" Click="miAlarmReportRDLC_Click" >
+                <WrapPanel>
+                    <Image DockPanel.Dock="Top" ToolTip="报警事件报表" Source ="Images/AlarmEventsReport.ico" ></Image>
+                    <TextBlock Text = " 报警事件 " FontSize="15" Padding="0,2,0,2" />
+                </WrapPanel>
+               
+            </Button>
+            <Button Name="btnMessageReportList" Click="miMessageReportRDLC_Click" >
+                <WrapPanel>
+                    <Image DockPanel.Dock="Top" ToolTip="短信报表" Source ="Images/MessgesReport.ico" ></Image>
+                    <TextBlock Text = " 短信报表 " FontSize="15" Padding="0,2,0,2" />
+                </WrapPanel>
+                
+            </Button>
+            <Button Name="btnVideoReportList" Click="miVideoReportRDLC_Click" >
+                <WrapPanel>
+                    <Image DockPanel.Dock="Top" ToolTip="视频报表" Source ="Images/VideosReport.ico" ></Image>
+                    <TextBlock Text = " 视频报表 " FontSize="15" Padding="0,2,0,2" />      
+                </WrapPanel>
+                
+            </Button>
+            <Button Name="btnRecordReportList" Click="miRecordReportRDLC_Click" >
+                <WrapPanel>
+                    <Image DockPanel.Dock="Top" ToolTip="录音报表" Source ="Images/RecordsReport.ico" ></Image>
+                    <TextBlock Text = " 录音报表 " FontSize="15" Padding="0,2,0,2" />
+                </WrapPanel>
+            </Button>
+        </ToolBar>
+
+        <avalonDock:DockingManager Grid.Row="1"  x:Name="dockingManager" AllowMixedOrientation="True" Margin="0,30,0,-5" VerticalAlignment="Stretch" >
+            <avalonDock:DockingManager.Theme>
+                <avalonDock:MetroTheme/>
+            </avalonDock:DockingManager.Theme>
+            <avalonDock:LayoutRoot>
+                <avalonDock:LayoutPanel Orientation="Vertical"  >
+                    <avalonDock:LayoutDocumentPane>
+                        <avalonDock:LayoutDocument ContentId="toolWindow1" Title="报警事件" CanClose="False" IsSelected="True">
+                            <Grid Name="grid2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <StatusBar Grid.Row="1" FlowDirection="RightToLeft" Height="32" Background="#FF58B97C"  VerticalAlignment="Bottom"  Visibility="Collapsed">
+                                    <Button  Name="btnEventEedPage" Content="末页" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White" Click="btnEventEedPage_Click" />
+                                    <Button  Name="btnEventNextPage" Content="下一页" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White" Click="btnEventNextPage_Click" />
+                                    <Button  Name="btndEventUpPage" Content="上一页" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White" Click="btnEventUpPage_Click" />
+                                    <Button  Name="btnEventFirstPage" Content="首页" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White" Click="btnEventFirstPage_Click" />
+                                    <Button  Name="btnEventGoPage" Content="转到" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White" Click="btnEventGoPage_Click" />
+                                    <Label Content ="页"></Label>
+                                    <TextBox Name="tbEventGoToPage" Width="40" TextChanged="tbEventGoToPage_TextChanged" PreviewKeyDown="tbEventGoToPage_PreviewKeyDown"></TextBox>
+                                    <TextBlock Text ="页，第"></TextBlock>
+                                    <TextBlock Name="tbEventAllPage" ></TextBlock>
+                                    <TextBlock Text ="页，共" RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                    <TextBlock Name="tbEventPageIndex"  RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                    <TextBlock  Text ="行，第" RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                    <TextBlock  Name="tbEventPageSize" RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                    <TextBlock  Text ="每页" RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                </StatusBar>
+                                <DataGrid Name="gridEvent" AutoGenerateColumns="False" IsReadOnly="True">
+                                    <DataGrid.RowStyle>
+                                        <Style TargetType="DataGridRow">
+                                            <Setter Property="Background" Value="{Binding EventBackgroundColor}" />
+                                            <Setter Property="Foreground" Value="{Binding EventFontColor}" />
+                                        </Style>
+                                    </DataGrid.RowStyle>
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="序号"  Binding="{Binding ID}" Visibility="Collapsed" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="报警时间"  Binding="{Binding AlarmTime,StringFormat={}{0:yyyy-MM-dd  HH:mm:ss}}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="事件类型"  Binding="{Binding EventTpye}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="辅助信息"  Binding="{Binding EventInfomation}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="主机编号"  Binding="{Binding Account}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="分区号码"  Binding="{Binding PartitionNumber}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="防区号码"  Binding="{Binding ZoneNumber}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="用户名称"  Binding="{Binding UserName}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="用户地址"  Binding="{Binding Address}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="用户类型"  Binding="{Binding UserType}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="主机类型"  Binding="{Binding PanelType}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="防区类型"  Binding="{Binding ZoneType}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="探测器型号"  Binding="{Binding DetectorType}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="安装位置"  Binding="{Binding InstallSide}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="通讯代码"  Binding="{Binding DataCode}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="处理内容"  Binding="{Binding MarkEvent}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="操作员姓名"  Binding="{Binding Operator}" Visibility="Collapsed"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="归类处理"  Binding="{Binding Classify}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="字体颜色"  Binding="{Binding EventFontColor}"  Visibility="Collapsed" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="背景颜色"  Binding="{Binding EventBackgroundColor}"  Visibility="Collapsed" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="来电号码"  Binding="{Binding TellNum}" ></DataGridTextColumn>
+                                        <DataGridTextColumn Header="站点编号"  Binding="{Binding Side}" Visibility="Collapsed"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="二级站点"  Binding="{Binding TowLeverSide}" Visibility="Collapsed"></DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </avalonDock:LayoutDocument>
+                        <avalonDock:LayoutDocument ContentId="toolWindow1" Title="用户资料" CanClose="False" >
+                            <Grid Name="grid1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="35"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <ToolBar Grid.Row="0" Height="35" Background="White" VerticalAlignment="Top">
+                                    <Button Name="btnAdd" Click="btnAdd_Click" >
+                                        <WrapPanel>
+                                            <Image Source="/Images/UserAdd.ico"></Image>
+                                            <TextBlock Text = " 增加 " FontSize="15" Padding="0,2,0,2" />
+                                        </WrapPanel>
+                                    </Button>
+                                    <Button Name="btnEdit" Click="btnEdit_Click">
+                                        <WrapPanel>
+                                            <Image Source="/Images/UserEdit.ico"></Image>
+                                            <TextBlock Text = " 编辑 " FontSize="15" Padding="0,2,0,2" />
+                                        </WrapPanel>
+                                    </Button>
+                                    <Button Name="btnDelete" Click="btnDelete_Click">
+                                        <WrapPanel>
+                                            <Image Source="/Images/UserDelete.ico"></Image>
+                                            <TextBlock Text = " 删除 " FontSize="15" Padding="0,2,0,2" />
+                                        </WrapPanel>
+                                    </Button>
+                                </ToolBar>
+                                <DataGrid Name="gridUser" AutoGenerateColumns="False"  IsReadOnly="True" VerticalAlignment="Stretch"  Grid.Row="1" MouseDoubleClick="gridUser_MouseDoubleClick">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="序号"  Binding="{Binding ID}" Visibility="Hidden"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="主机编号"  Binding="{Binding Account}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="用户名称"  Binding="{Binding UserName}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="用户地址"  Binding="{Binding Address}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="用户类型"  Binding="{Binding UserType}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="故障"  Binding="{Binding Trouble}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="主机状态"  Binding="{Binding PanelStatus}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="通讯格式"  Binding="{Binding Protocol}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="主机类型"  Binding="{Binding PanelName}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="安装日期"  Binding="{Binding InstallDate,StringFormat={}{0:yyyy-MM-dd}}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="安装单位"  Binding="{Binding InstallCompany}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="安装人员"  Binding="{Binding Installer}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="合同期限"  Binding="{Binding Deadline,StringFormat={}{0:yyyy-MM-dd}}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="收费标准"  Binding="{Binding Charge}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="最后时间"  Binding="{Binding LastTime,StringFormat={}{0:yyyy-MM-dd}}"></DataGridTextColumn>
+                                        <DataGridTextColumn Header="备注"  Binding="{Binding Mark}"></DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                                <StatusBar Grid.Row="2" FlowDirection="RightToLeft" Height="32" Background="#FF58B97C"  VerticalAlignment="Bottom">
+                                    <Button  Name="btnEedPage" Content="末页" Click="btnEedPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+                                    <Button  Name="btnNextPage" Content="下一页" Click="btnNextPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+                                    <Button  Name="btnUpPage" Content="上一页" Click="btnUpPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+                                    <Button  Name="btnFirstPage" Content="首页" Click="btnFirstPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+                                    <Button  Name="btnGoPage" Content="转到" Click="btnGoPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+                                    <Label Content ="页"></Label>
+                                    <TextBox Name="tbGoToPage" Width="40" TextChanged="tbGoToPage_TextChanged" PreviewKeyDown="tbGoToPage_PreviewKeyDown"></TextBox>
+                                    <TextBlock Text ="页，第"></TextBlock>
+                                    <TextBlock Name="tbAllPage" ></TextBlock>
+                                    <TextBlock Text ="页，共" RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                    <TextBlock Name="tbPageIndex"  RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                    <TextBlock  Text ="行，第" RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                    <TextBlock  Name="tbPageSize" RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                    <TextBlock  Text ="每页" RenderTransformOrigin="2.178,0.441"></TextBlock>
+                                </StatusBar>
+                            </Grid>
+                        </avalonDock:LayoutDocument>
+                    </avalonDock:LayoutDocumentPane>
+                    <!--<avalonDock:LayoutAnchorablePane DockWidth="250">
+                            <avalonDock:LayoutAnchorable Title="Sample Tool Pane">
+                                <TextBox/>
+                            </avalonDock:LayoutAnchorable>
+                        </avalonDock:LayoutAnchorablePane>-->
+                </avalonDock:LayoutPanel>
+                <!--<avalonDock:LayoutRoot.LeftSide>
+                    <avalonDock:LayoutAnchorSide>
+                        <avalonDock:LayoutAnchorGroup>
+                            <avalonDock:LayoutAnchorable Title="Autohidden Content">
+                                <TextBox/>
+                            </avalonDock:LayoutAnchorable>
+                        </avalonDock:LayoutAnchorGroup>
+                    </avalonDock:LayoutAnchorSide>
+                </avalonDock:LayoutRoot.LeftSide>-->
+            </avalonDock:LayoutRoot>
+        </avalonDock:DockingManager>
+    </Grid>
+</Window>

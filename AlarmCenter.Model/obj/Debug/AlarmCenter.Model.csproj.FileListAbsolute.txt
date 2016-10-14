@@ -1,0 +1,8 @@
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.Model\bin\Debug\AlarmCenter.Model.dll
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.Model\bin\Debug\AlarmCenter.Model.pdb
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.Model\obj\Debug\AlarmCenter.Model.dll
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.Model\obj\Debug\AlarmCenter.Model.pdb
+D:\AlarmCenter\AlarmCenter.Model\bin\Debug\AlarmCenter.Model.dll
+D:\AlarmCenter\AlarmCenter.Model\bin\Debug\AlarmCenter.Model.pdb
+D:\AlarmCenter\AlarmCenter.Model\obj\Debug\AlarmCenter.Model.dll
+D:\AlarmCenter\AlarmCenter.Model\obj\Debug\AlarmCenter.Model.pdb

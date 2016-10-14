@@ -1,0 +1,33 @@
+﻿<Window x:Class="AlarmCenter.UI.SerialPortDatas.SerialPortData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" WindowStartupLocation="CenterScreen"
+        Title="串口数据" Height="362" Width="676" Loaded="Window_Loaded">
+    <Grid>
+        <TabControl Name="tcSerialPortData" Margin="0,3,0,0">
+            <TabItem Name="tiSerialPortData1" Header="串口数据1" >
+                <ListBox Margin="0" Name="lbSerialPortData1" ></ListBox>
+            </TabItem>
+            <TabItem Name="tiSerialPortData2" Header="串口数据2">
+                <ListBox Margin="0" Name="lbSerialPortData2" ></ListBox>
+            </TabItem>
+            <TabItem Name="tiSerialPortData3" Header="串口数据3">
+                <ListBox Name="lbSerialPortData3" ></ListBox>
+            </TabItem>
+            <TabItem Name="tiSerialPortData4" Header="串口数据4">
+                <ListBox Name="lbSerialPortData4" ></ListBox>
+            </TabItem>
+            <TabItem Name="tiSerialPortData5" Header="串口数据5">
+                <ListBox Name="lbSerialPortData5" ></ListBox>
+            </TabItem>
+            <TabItem Name="tiSerialPortData6" Header="串口数据6">
+                <ListBox Name="lbSerialPortData6" ></ListBox>
+            </TabItem>
+            <TabItem Name="tiSerialPortData7" Header="串口数据7">
+                <ListBox Name="lbSerialPortData7" ></ListBox>
+            </TabItem>
+            <TabItem Name="tiSerialPortData8" Header="串口数据8">
+                <ListBox Name="lbSerialPortData8" ></ListBox>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

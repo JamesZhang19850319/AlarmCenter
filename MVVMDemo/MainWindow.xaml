@@ -1,0 +1,15 @@
+﻿<Window x:Class="MVVMDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="586" Loaded="Window_Loaded_1">
+<!--定义View.
+　　MainWindow.xaml代码：我们能看到，TextBlock控件的text属性，绑定在model对象的WPF属性上; Button的click事件通过命令绑定到CopyCmd命令属性。　　-->
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" >
+            <TextBlock Text="{Binding model.WPF}" Height="208" TextWrapping="WrapWithOverflow"></TextBlock>
+            <Button Command="{Binding CopyCmd}" Height="93" Width="232">Copy</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

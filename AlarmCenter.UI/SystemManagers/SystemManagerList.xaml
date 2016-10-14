@@ -1,0 +1,17 @@
+﻿<Window x:Class="AlarmCenter.UI.SystemManagers.SystemManagerList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="系统管理员列表" Height="300" Width="554"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <DockPanel>
+            <DataGrid AutoGenerateColumns="False" Name="gridSystemManager" IsReadOnly="True" DockPanel.Dock="Top">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="用户名" Width="100" Binding="{Binding UserName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="真实名字" Width="200" Binding="{Binding RealName}" ></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+    </Grid>
+</Window>

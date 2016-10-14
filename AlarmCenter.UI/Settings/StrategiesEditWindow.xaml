@@ -1,0 +1,76 @@
+﻿<Window x:Class="AlarmCenter.UI.Settings.StrategiesEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:CustomWPFColorPicker="clr-namespace:CustomWPFColorPicker;assembly=CustomWPFColorPicker"
+        Title="处理策略编辑" Loaded="Window_Loaded" ResizeMode="NoResize"  Height="190" Width="535" WindowStartupLocation="CenterScreen">
+    <Grid  Name="gridStrategies">
+        <DockPanel>
+            <Border Margin="3,3,3,0" DockPanel.Dock="Top" BorderThickness="0.5" BorderBrush="Black" >
+                <DockPanel>
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="72"></ColumnDefinition>
+                            <ColumnDefinition Width="175"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="175"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.Column="0">
+                            <TextBlock Text="策略编号" Margin="3,10,3,3" Height="21" Padding="3"></TextBlock>
+                            <TextBlock Text="字体颜色" Margin="3,3,3,3" Height="21" Padding="3" ></TextBlock>
+                            <TextBlock Text="提示类型" Margin="3,3,3,3" Height="21" Padding="3"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="2">
+                            <TextBlock Text="策略名称" Margin="3,10,3,3" Height="21" Padding="3"></TextBlock>
+                            <TextBlock Text="背景颜色" Margin="3,3,3,3" Height="21" Padding="3" ></TextBlock>
+                            <TextBlock Text="是否自动打印" Margin="3,3,3,3" Height="21"  Padding="3"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1" >
+                            <ComboBox Name="cbStrategiesID" Margin="3,10,3,3" Height="21" ></ComboBox>
+                            <Border  DockPanel.Dock="Top" Margin="3,3,3,3" BorderBrush="Black" BorderThickness="0.3"  >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Border Name="bdEventFontColor" Margin="3,3,3,3" Width="50" Background="{Binding ElementName=EventFontColorPicker, Path=CurrentColor}"></Border>
+                                    <TextBlock Name="tbEventFontColor" Width="83" Text="{Binding ElementName=EventFontColorPicker, Path=CurrentColor}"  FontSize="10"  Margin="3" />
+                                    <CustomWPFColorPicker:ColorPickerControlView x:Name="EventFontColorPicker" ToolTip="字体颜色" Margin="3" CurrentColor="GreenYellow"/>
+                                </StackPanel>
+                            </Border>
+                            <ComboBox Name="cbNoticeType"  Margin="3,3,3,3" Height="21"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="3"  >
+                            <TextBox Name="tbStrategiesName" Text="{Binding StrategiesName}" Margin="3,10,3,3" Height="21" ></TextBox>
+                            <Border  DockPanel.Dock="Top" Margin="3,3,3,3" BorderBrush="Black" BorderThickness="0.3"  >
+                                <StackPanel Orientation="Horizontal" >
+                                    <Border  Name="bdEventBackgroundColor" Margin="3,3,3,3" Width="50" Background="{Binding ElementName=EventBackgroundColorPicker, Path=CurrentColor}"></Border>
+                                    <TextBlock Name="tbEventBackgroundColor" Width="83" Text="{Binding ElementName=EventBackgroundColorPicker, Path=CurrentColor}"  FontSize="10"  Margin="3" />
+                                    <CustomWPFColorPicker:ColorPickerControlView x:Name="EventBackgroundColorPicker" ToolTip="背景颜色" Margin="3" CurrentColor="Red"/>
+                                </StackPanel>
+                            </Border>
+                            <CheckBox Name="tbIsPrint" IsChecked="{Binding IsPrint}" Margin="3,6,3,3" VerticalAlignment="Center"></CheckBox>
+                        </StackPanel>    
+                    </Grid>
+                    <Grid DockPanel.Dock="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="72"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.Column="0">
+                             <TextBlock Text="报警声文件" Margin="3,3,3,3" Height="21" Padding="3"></TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="0" Grid.Column="1">
+                            <TextBox Name="tbSoundFile" Text="{Binding SoundFile}" Margin="3,3,3,3" Height="21" Padding="3"></TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="2">
+                            <Button Name="btnSoundFile" Margin="3,3,3,3" Width="80" Height="21" Padding="3">浏 览</Button>
+                        </StackPanel>
+                    </Grid>
+                </DockPanel>
+            </Border>
+            
+            <Grid  DockPanel.Dock="Top" VerticalAlignment="Stretch"  >
+                <Button Name="btnSave" Margin="3,3,90,3"  Width="80" Height="20" HorizontalAlignment="Right" Click="btnSave_Click">确定</Button>
+                <Button Name="btnCancel" Margin="3,3,6,3" Width="80" Height="20" HorizontalAlignment="Right" Click="btnCancel_Click">取消</Button>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

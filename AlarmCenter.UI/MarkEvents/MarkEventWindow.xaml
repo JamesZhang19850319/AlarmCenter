@@ -1,0 +1,150 @@
+﻿<Window x:Class="AlarmCenter.UI.MarkEvents.MarkEventWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        xmlns:input="clr-namespace:System.Windows.Input;assembly=PresentationCore"
+        Title="处理警情" Height="422" Width="496" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel>
+            <TabControl Height="155" >
+                <TabItem Header ="基本信息">
+                    <Grid Name="gridBasicInformation">
+                        <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="180"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="180"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Row="0" Grid.Column="0">
+                            <TextBlock Margin="3" Text="用户名称"/>
+                            <TextBlock Margin="3" Text="用户类型"/>
+                            <TextBlock Margin="3" Text="主机编号"/>
+                            <TextBlock Margin="3" Text="安装日期"/>
+                            <TextBlock Margin="3" Text="安装单位"/>
+                            <TextBlock Margin="3" Text="合同期限"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1">
+                            <TextBox Text="{Binding UserName}" IsReadOnly="True"  Margin="2"></TextBox>
+                            <TextBox Text="{Binding UserType}" IsReadOnly="True"  Margin="2"></TextBox>
+                            <TextBox Text="{Binding Account}" IsReadOnly="True"  Margin="2"></TextBox>
+                            <TextBox Text="{Binding InstallDate}" IsReadOnly="True"  Margin="2"></TextBox>
+                            <TextBox Text="{Binding InstallCompany}" IsReadOnly="True"  Margin="2"></TextBox>
+                            <TextBox Text="{Binding Deadline}" IsReadOnly="True"  Margin="2"></TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="2">
+                            <TextBlock Margin="3" Text="用户地址"/>
+                            <TextBlock Margin="3" Text=" "/>
+                            <TextBlock Margin="3" Text="主机型号"/>
+                            <TextBlock Margin="3" Text="通讯格式"/>
+                            <TextBlock Margin="3" Text="安装人员"/>
+                            <TextBlock Margin="3" Text="收费标准"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="3">
+                            <TextBox Text="{Binding Address}" IsReadOnly="True"  Height="40"  Margin="2" TextWrapping="Wrap"></TextBox>
+                            <TextBox Text="{Binding PanelName}" IsReadOnly="True"  Margin="2"></TextBox>
+                            <TextBox Text="{Binding Protocol}" IsReadOnly="True"  Margin="2"></TextBox>
+                            <TextBox Text="{Binding Installer}" IsReadOnly="True"  Margin="2"></TextBox>
+                            <TextBox Text="{Binding Charge}" IsReadOnly="True"  Margin="2"></TextBox>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+                <TabItem Header ="联系人">
+                    <Grid >
+                    <DockPanel Name="dpContacts">
+                        <ToolBar  DockPanel.Dock="Top" Height="35" Visibility="Collapsed">
+                            <Button Name="btnAddContacts" ToolTip="增加联系人">
+                                <WrapPanel>
+                                    <Image Source="../Images/Add.ico"></Image>
+                                    <TextBlock Text = " 增加 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                            <Button Name="btnEditContacts" ToolTip="编辑联系人">
+                                <WrapPanel>
+                                    <Image Source="../Images/Edit.ico"></Image>
+                                    <TextBlock Text = " 编辑 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                            <Button Name="btnDeleteContacts" ToolTip="删除联系人">
+                                <WrapPanel>
+                                    <Image Source="../Images/Delete.ico"></Image>
+                                    <TextBlock Text = " 删除 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                        </ToolBar>
+                        <DataGrid Name="dataGridContacts" AutoGenerateColumns="False" IsReadOnly="True" VerticalAlignment="Stretch">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="序号" Binding="{Binding ID}" Visibility="Collapsed"></DataGridTextColumn>
+                                <DataGridTextColumn Header="编号"  Binding="{Binding ContactsID}" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="主机编号"  Binding="{Binding Account}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="姓名"  Binding="{Binding ContactsName}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="职务"  Binding="{Binding ContactsJob}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="电话"  Binding="{Binding ContactsPhoneNumber}"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </Grid>
+                </TabItem>
+            </TabControl>
+            <Grid Margin="0,10,0,0" Name="gridEventInformation">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="180"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="180"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Row="0" Grid.Column="0">
+                    <TextBlock Margin="6,3,3,3">事件类型</TextBlock>
+                    <TextBlock  Margin="6,3,3,3">防区编号</TextBlock>
+                    <TextBlock  Margin="6,3,3,3">防区类型</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <TextBox Name="tbEventTpye" Margin="2" IsReadOnly="True"></TextBox>
+                    <TextBox Name="tbZoneNum" Margin="2" IsReadOnly="True"></TextBox>
+                    <TextBox Name="tbZoneType" Margin="2" IsReadOnly="True"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="2">
+                    <TextBlock  Margin="3,3,3,3">辅助信息</TextBlock>
+                    <TextBlock  Margin="3,3,3,3">防区位置</TextBlock>
+                    <TextBlock  Margin="3,3,3,3">探头型号</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="3">
+                    <TextBox Name="tbEventInfomation" Margin="2" IsReadOnly="True"></TextBox>
+                    <TextBox Name="tbInstallSide"  Margin="2" IsReadOnly="True"></TextBox>
+                    <TextBox Name="tbDetectorType" Margin="2" IsReadOnly="True"></TextBox>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="0,10,0,0" Name="gridMarkEvent">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="95"></ColumnDefinition>
+                    <ColumnDefinition Width="95"></ColumnDefinition>
+                    <ColumnDefinition Width="95"></ColumnDefinition>
+                    <ColumnDefinition Width="95"></ColumnDefinition>
+                    <ColumnDefinition Width="94"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Row="0" Grid.Column="0">
+                    <RadioButton Name="rbMarkEvent1" GroupName="markEvent" Margin="10,5,10,5">真实报警</RadioButton>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <RadioButton Name="rbMarkEvent2" GroupName="markEvent" Margin="10,5,10,5">环境误报</RadioButton> 
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="2">
+                    <RadioButton Name="rbMarkEvent3" GroupName="markEvent" Margin="10,5,10,5">人为误报</RadioButton>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="3">
+                    <RadioButton Name="rbMarkEvent4" GroupName="markEvent" Margin="10,5,10,5">系统误报</RadioButton>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="4">
+                    <RadioButton Name="rbMarkEvent5" GroupName="markEvent" Margin="10,5,10,5" IsChecked="True">暂不处理</RadioButton>
+                </StackPanel>
+            </Grid>
+            
+            <GroupBox Header="处理备注">
+                <TextBox Name="tbMarkEvent" Height="70" TextWrapping="Wrap" Text="{Binding MarkEvent}" ></TextBox>
+            </GroupBox>
+            <WrapPanel FlowDirection="RightToLeft">
+                <Button Margin="10,3,10,3" Width="75" Height="19" Click="btnCancel_Click">取消</Button>
+                <Button Margin="10,3,10,3" Width="75" Height="19" Click="btnSave_Click">确定</Button>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>

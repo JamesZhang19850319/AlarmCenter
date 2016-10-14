@@ -1,0 +1,20 @@
+﻿StudentManagerSystem
+
+
+winexe
+C#
+.cs
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\obj\x86\Debug\
+StudentManagerSystem.UI
+none
+false
+DEBUG;TRACE
+C:\Program Files\StudentManagerSystem\StudentSystem.UI\App.xaml
+8-1779373504
+
+141361811357
+15-1337545368
+MainWindow.xaml;SystemManagers\SystemManagerEdit.xaml;SystemManagers\SystemManagerList.xaml;LoginWindow.xaml;Students\StudentEdit.xaml;Students\StudentList.xaml;User\UserEdit.xaml;User\UserList.xaml;
+
+False
+

@@ -1,0 +1,12 @@
+D:\AlarmCenter\MVVMDemo\bin\Debug\MVVMDemo.exe
+D:\AlarmCenter\MVVMDemo\bin\Debug\MVVMDemo.pdb
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MVVMDemo.csprojResolveAssemblyReference.cache
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MainWindow.baml
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MainWindow.g.cs
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\App.g.cs
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MVVMDemo_MarkupCompile.cache
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MVVMDemo.g.resources
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MVVMDemo.Properties.Resources.resources
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MVVMDemo.csproj.GenerateResource.Cache
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MVVMDemo.exe
+D:\AlarmCenter\MVVMDemo\obj\x86\Debug\MVVMDemo.pdb

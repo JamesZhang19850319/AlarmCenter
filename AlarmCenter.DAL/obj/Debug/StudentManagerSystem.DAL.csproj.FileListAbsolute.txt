@@ -1,0 +1,7 @@
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\bin\Debug\StudentManagerSystem.DAL.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\bin\Debug\StudentManagerSystem.DAL.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\bin\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\bin\Debug\StudentManagerSystem.Model.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\obj\Debug\StudentManagerSystem.DAL.csprojResolveAssemblyReference.cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\obj\Debug\StudentManagerSystem.DAL.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.DAL\obj\Debug\StudentManagerSystem.DAL.pdb

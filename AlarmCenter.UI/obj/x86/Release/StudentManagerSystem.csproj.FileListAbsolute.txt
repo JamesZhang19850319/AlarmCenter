@@ -1,0 +1,14 @@
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\bin\Release\StudentManagerSystem.exe.config
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\bin\Release\StudentManagerSystem.exe
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\bin\Release\StudentManagerSystem.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentEditUI.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentListUI.baml
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentEditUI.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentListUI.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\App.g.cs
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentManagerSystem_MarkupCompile.cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentManagerSystem.g.resources
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentManagerSystem.Properties.Resources.resources
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentManagerSystem.csproj.GenerateResource.Cache
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentManagerSystem.exe
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem\obj\x86\Release\StudentManagerSystem.pdb

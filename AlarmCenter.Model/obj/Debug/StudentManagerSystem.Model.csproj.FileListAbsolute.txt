@@ -1,0 +1,4 @@
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.Model\bin\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.Model\bin\Debug\StudentManagerSystem.Model.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.Model\obj\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.Model\obj\Debug\StudentManagerSystem.Model.pdb

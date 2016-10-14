@@ -1,0 +1,131 @@
+﻿<Window x:Class="AlarmCenter.UI.Users.UserEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:input="clr-namespace:System.Windows.Input;assembly=PresentationCore"
+        Title="用户资料" Height="381" Width="462" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    <Grid >
+        <TabControl Margin="0,3,0,39" >
+            <TabItem Header ="基本信息">
+                <Grid Name="gridBasic">
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="132,8,0,0" Name="textBlock1" Text="用户名称" VerticalAlignment="Top" />
+                    <TextBox Text="{Binding UserName}" Height="23" HorizontalAlignment="Left" Margin="186,6,5,0" Name="tbUserName"  VerticalAlignment="Top" Width="236" />
+                    <TextBlock  HorizontalAlignment="Left" Margin="5,35,0,0" Name="textBlock2" Text="用户地址" Height="22" VerticalAlignment="Top" />
+                    <TextBox Text="{Binding Address}" Height="23" HorizontalAlignment="Left" Margin="59,34,5,0" Name="tbAddress" VerticalAlignment="Top" Width="363" />
+                    <TextBox Text="{Binding Account}" Height="23" HorizontalAlignment="Left" Margin="59,6,0,0" Name="tbAccount" VerticalAlignment="Top" Width="67"  PreviewKeyDown="tbAccount_PreviewKeyDown" input:InputMethod.IsInputMethodEnabled="False" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="5,8,0,0" Name="textBlock3" Text="主机编号" VerticalAlignment="Top" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="5,65,0,0" Name="textBlock4" Text="用户类型" VerticalAlignment="Top" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="5,181,0,0" Name="textBlock12" Text="备注说明" VerticalAlignment="Top" />
+                    <TextBox Text="{Binding Mark}" Margin="59,181,0,6" Name="tbMark" HorizontalAlignment="Left" Width="363" Height="81" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="220,63,0,0" Name="textBlock15" Text="通讯格式" VerticalAlignment="Top" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="5,92,0,0" Name="textBlock16" Text="主机型号" VerticalAlignment="Top" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="5,123,0,0" Name="textBlock17" Text="安装日期" VerticalAlignment="Top" />
+                    <TextBox Text="{Binding Installer}" Height="23" Margin="274,91,0,0" Name="tbInstaller" VerticalAlignment="Top" HorizontalAlignment="Left" Width="148" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="220,92,0,0" Name="textBlock18" Text="安装人员" VerticalAlignment="Top" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="220,123,0,0" Name="textBlock19" Text="安装单位" VerticalAlignment="Top" />
+                    <TextBox Text="{Binding InstallCompany}" Height="23" Margin="274,120,0,0" Name="tbInstallCompany" VerticalAlignment="Top" HorizontalAlignment="Left" Width="148" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="5,152,0,0" Name="textBlock21" Text="收费标准" VerticalAlignment="Top" />
+                    <TextBox Text="{Binding Charge}" Height="23" HorizontalAlignment="Left" Margin="59,151,0,0" Name="tbCharge" VerticalAlignment="Top" Width="148" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="220,152,0,0" Name="textBlock5" Text="合同期限" VerticalAlignment="Top" />
+                    <DatePicker  x:Name="dpInstallDate" SelectedDate="{Binding InstallDate}"  Height="25" HorizontalAlignment="Left" Margin="59,120,0,0" VerticalAlignment="Top" Width="148" />
+                    <ComboBox x:Name="cbUserTpye" Height="23" HorizontalAlignment="Left" Margin="59,62,0,0" VerticalAlignment="Top" Width="148"/>
+                    <DatePicker  x:Name="dpDeadlineDate" SelectedDate="{Binding DeadlineDate}" Height="25" HorizontalAlignment="Left" Margin="274,148,0,0" VerticalAlignment="Top" Width="148" />
+                    <ComboBox x:Name="cbPanelName" Height="23" HorizontalAlignment="Left" Margin="59,91,0,0" VerticalAlignment="Top" Width="148" />
+                    <ComboBox x:Name="cbProtocol" Height="23" HorizontalAlignment="Left" Margin="273,62,5,0" VerticalAlignment="Top" Width="148" />
+                </Grid>
+            </TabItem>
+            <TabItem Header ="联系人">
+                <Grid >
+                    <DockPanel Name="dpContacts">
+                        <ToolBar  DockPanel.Dock="Top" Height="35">
+                            <Button Name="btnAddContacts" ToolTip="增加联系人" Click="btnAddContacts_Click">
+                                <WrapPanel>
+                                    <Image Source="../Images/Add.ico"></Image>
+                                    <TextBlock Text = " 增加 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                            <Button Name="btnEditContacts" ToolTip="编辑联系人" Click="btnEditContacts_Click">
+                                <WrapPanel>
+                                    <Image Source="../Images/Edit.ico"></Image>
+                                    <TextBlock Text = " 编辑 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                            <Button Name="btnDeleteContacts" ToolTip="删除联系人" Click="btnDeleteContacts_Click">
+                                <WrapPanel>
+                                    <Image Source="../Images/Delete.ico"></Image>
+                                    <TextBlock Text = " 删除 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                        </ToolBar>
+                        <DataGrid Name="dataGridContacts" AutoGenerateColumns="False" IsReadOnly="True" VerticalAlignment="Stretch">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="序号" Binding="{Binding ID}" Visibility="Collapsed" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="编号"  Binding="{Binding ContactsID}" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="主机编号"  Binding="{Binding Account}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="姓名"  Binding="{Binding ContactsName}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="职务"  Binding="{Binding ContactsJob}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="电话"  Binding="{Binding ContactsPhoneNumber}"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header ="防区信息">
+                <Grid >
+                    <DockPanel Name="dpZone">
+                        <ToolBar  DockPanel.Dock="Top" Height="35">
+                            <Button Name="btnAddZone" ToolTip="增加防区" Click="btnAddZone_Click">
+                                <WrapPanel>
+                                    <Image Source="../Images/Add.ico"></Image>
+                                    <TextBlock Text = " 增加 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                            <Button Name="btnEditZone" ToolTip="编辑防区" Click="btnEditZone_Click">
+                                <WrapPanel>
+                                    <Image Source="../Images/Edit.ico"></Image>
+                                    <TextBlock Text = " 编辑 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                            <Button Name="btnDeleteZone" ToolTip="删除防区" Click="btnDeleteZone_Click">
+                                <WrapPanel>
+                                    <Image Source="../Images/Delete.ico"></Image>
+                                    <TextBlock Text = " 删除 " FontSize="15" Padding="0,2,0,2" />
+                                </WrapPanel>
+                            </Button>
+                        </ToolBar>
+                        <DataGrid Name="dataGridZone" AutoGenerateColumns="False" IsReadOnly="True" VerticalAlignment="Stretch" MouseDoubleClick="dataGridZone_MouseDoubleClick">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="序号"  Binding="{Binding ID}"  Visibility="Collapsed" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="主机编号"  Binding="{Binding Account}" ></DataGridTextColumn>
+                                <DataGridTextColumn Header="防区编号"  Binding="{Binding ZoneNum}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="分区编号"  Binding="{Binding PartitionNum}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="防区类型"  Binding="{Binding ZoneType}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="探测器型号"  Binding="{Binding DetectorType}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="安装位置"  Binding="{Binding InstallSide}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="防区状态"  Binding="{Binding ZoneStatus}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="横坐标"  Binding="{Binding Abscissa}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="纵坐标"  Binding="{Binding Ordinate}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="防区状态更新时间"  Binding="{Binding StatusRefreshTime,StringFormat={}{0:yyyy-MM-dd HH:mm:ss}}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="最近一次上报时间"  Binding="{Binding EedEventTime,StringFormat={}{0:yyyy-MM-dd HH:mm:ss}}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="是否报警"  Binding="{Binding IsAlarm}"></DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </DockPanel>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="状态">
+                <Grid>
+                    <StackPanel >
+                        <TextBlock Text="{Binding UserName}"></TextBlock>
+                        <TextBlock Text="主机状态："></TextBlock>
+                        <TextBlock Text="故障状态："></TextBlock>
+                        <TextBlock Text="最近报告时间："></TextBlock>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+        <Button Content="保存" Margin="0,0,87,10" Name="btnSave" Click="btnSave_Click" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" />
+        <Button Content="取消" Margin="0,0,6,10" Name="btnCancel" Click="btnCancel_Click" HorizontalAlignment="Right" Width="75" Height="23" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

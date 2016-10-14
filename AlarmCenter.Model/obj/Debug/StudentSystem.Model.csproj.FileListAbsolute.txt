@@ -1,0 +1,12 @@
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.Model\bin\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.Model\bin\Debug\StudentManagerSystem.Model.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.Model\obj\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentManagerSystem.Model\obj\Debug\StudentManagerSystem.Model.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.Model\bin\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.Model\bin\Debug\StudentManagerSystem.Model.pdb
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.Model\obj\Debug\StudentManagerSystem.Model.dll
+C:\Users\姆斯\Desktop\StudentManagerSystem\StudentSystem.Model\obj\Debug\StudentManagerSystem.Model.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.Model\bin\Debug\StudentSystem.Model.dll
+C:\Program Files\StudentManagerSystem\StudentSystem.Model\bin\Debug\StudentSystem.Model.pdb
+C:\Program Files\StudentManagerSystem\StudentSystem.Model\obj\Debug\StudentSystem.Model.dll
+C:\Program Files\StudentManagerSystem\StudentSystem.Model\obj\Debug\StudentSystem.Model.pdb

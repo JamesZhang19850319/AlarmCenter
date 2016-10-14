@@ -1,0 +1,14 @@
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.DAL\bin\Debug\AlarmCenter.DAL.dll
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.DAL\bin\Debug\AlarmCenter.DAL.pdb
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.DAL\bin\Debug\AlarmCenter.Model.dll
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.DAL\bin\Debug\AlarmCenter.Model.pdb
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.DAL\obj\Debug\AlarmCenter.DAL.csprojResolveAssemblyReference.cache
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.DAL\obj\Debug\AlarmCenter.DAL.dll
+C:\Users\姆斯\Desktop\AlarmCenter\AlarmCenter.DAL\obj\Debug\AlarmCenter.DAL.pdb
+D:\AlarmCenter\AlarmCenter.DAL\bin\Debug\AlarmCenter.DAL.dll
+D:\AlarmCenter\AlarmCenter.DAL\bin\Debug\AlarmCenter.DAL.pdb
+D:\AlarmCenter\AlarmCenter.DAL\bin\Debug\AlarmCenter.Model.dll
+D:\AlarmCenter\AlarmCenter.DAL\bin\Debug\AlarmCenter.Model.pdb
+D:\AlarmCenter\AlarmCenter.DAL\obj\Debug\AlarmCenter.DAL.csprojResolveAssemblyReference.cache
+D:\AlarmCenter\AlarmCenter.DAL\obj\Debug\AlarmCenter.DAL.dll
+D:\AlarmCenter\AlarmCenter.DAL\obj\Debug\AlarmCenter.DAL.pdb

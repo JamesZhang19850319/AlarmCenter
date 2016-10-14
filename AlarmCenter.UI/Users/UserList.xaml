@@ -1,0 +1,58 @@
+﻿<Window x:Class="AlarmCenter.UI.Users.UserList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        Title="用户列表" Height="394.03" Width="820.418"
+        WindowState="Maximized" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Color x:Key="绿色">#FF58B97C</Color>
+    </Window.Resources>
+    <Grid>
+        <DockPanel Margin="0,0,0,30">
+            <ToolBar DockPanel.Dock="Top" Height="35" Background="White">
+                <Button Name="btnAdd" Click="btnAdd_Click" >
+                    <WrapPanel>
+                        <Image Source="/Images/UserAdd.ico"></Image>
+                        <TextBlock Text = " 增加 " FontSize="15" Padding="0,2,0,2" />
+                    </WrapPanel>
+                </Button>
+                <Button Name="btnEdit" Click="btnEdit_Click">
+                    <WrapPanel>
+                        <Image Source="/Images/UserEdit.ico"></Image>
+                        <TextBlock Text = " 编辑 " FontSize="15" Padding="0,2,0,2" />
+                    </WrapPanel>
+                </Button>
+                <Button Name="btnDelete" Click="btnDelete_Click">
+                    <WrapPanel>
+                        <Image Source="/Images/UserDelete.ico"></Image>
+                        <TextBlock Text = " 删除 " FontSize="15" Padding="0,2,0,2" />
+                    </WrapPanel>
+                </Button>
+            </ToolBar>
+            <DataGrid AutoGenerateColumns="True" Name="grid" IsReadOnly="True" DockPanel.Dock="Top">
+
+            </DataGrid>
+        </DockPanel>
+        <StatusBar Height="33" FlowDirection="RightToLeft" Background="#FF58B97C" VerticalAlignment="Bottom">
+            <Button  Name="btnEedPage" Content="末页" Click="btnEedPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+            <Button  Name="btnNextPage" Content="下一页" Click="btnNextPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+            <Button  Name="btnUpPage" Content="上一页" Click="btnUpPage_Click" BorderBrush="#FF58B97C" Foreground="White">
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource 绿色}"/>
+                </Button.Background>
+            </Button>
+            <Button  Name="btnFirstPage" Content="首页" Click="btnFirstPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+            <Button  Name="btnGoPage" Content="转到" Click="btnGoPage_Click" Background="#FF58B97C" BorderBrush="#FF58B97C" Foreground="White"/>
+            <Label Content ="页"></Label>
+            <TextBox Name="tbGoToPage" Width="40" KeyDown="tbGoToPage_KeyDown" TextChanged="tbGoToPage_TextChanged"></TextBox>
+            <TextBlock Text ="页，第"></TextBlock>
+            <TextBlock Name="tbAllPage" ></TextBlock>
+            <TextBlock Text ="页，共" RenderTransformOrigin="2.178,0.441"></TextBlock>
+            <TextBlock Name="tbPageIndex"  RenderTransformOrigin="2.178,0.441"></TextBlock>
+            <TextBlock  Text ="行，第" RenderTransformOrigin="2.178,0.441"></TextBlock>
+            <TextBlock  Name="tbPageSize" RenderTransformOrigin="2.178,0.441"></TextBlock>
+            <TextBlock  Text ="每页" RenderTransformOrigin="2.178,0.441"></TextBlock>
+        </StatusBar>
+    </Grid>
+</Window>
